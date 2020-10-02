@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.TardesView">
+   <children>
+      <Label fx:id="labb" layoutX="245.0" layoutY="139.0" text="Labbel">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+
+       <Label fx:id="lb_phone" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="268.0" layoutY="125.0" prefHeight="27.0" prefWidth="155.0" text="الهاتف : 0699821139">
+           <font>
+               <Font size="18.0" />
+           </font>
+       </Label>
+       
+   </children>
+</AnchorPane>

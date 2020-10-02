@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anch" prefHeight="47.0" prefWidth="1000.0" style="-fx-background-color: #f2f2f2; -fx-border-radius: 5em;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lb_name" alignment="CENTER_RIGHT" contentDisplay="RIGHT" graphicTextGap="10.0" layoutX="772.6666666666666" layoutY="8.0" lineSpacing="10.0" prefHeight="35.0" prefWidth="217.0" text="محمد الصالح قريشة" AnchorPane.rightAnchor="10.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fx:id="icon_name" fill="#4285f4" glyphName="TAG" size="30" />
+         </graphic>
+      </Label>
+      <Separator layoutX="688.4" layoutY="42.0" prefHeight="8.0" prefWidth="301.0" AnchorPane.rightAnchor="10.0" />
+      <Label fx:id="lb_barcod" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="794.0" layoutY="40.0" prefHeight="27.0" prefWidth="155.0" text=" 0699821139" textFill="#9b9b9b" AnchorPane.rightAnchor="50.66666666666663">
+         <graphic>
+            <FontAwesomeIconView glyphName="BARCODE" />
+         </graphic>
+      </Label>
+      <Label fx:id="lb_price" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="264.0" layoutY="20.0" prefHeight="27.0" prefWidth="99.0" text="سعر البيع" textFill="#9b9b9b" AnchorPane.bottomAnchor="20.000000000000014">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="MONEY" />
+         </graphic>
+      </Label>
+      <Label id="gridpane" fx:id="lb_qt_stock" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="484.0" layoutY="26.0" prefHeight="27.0" prefWidth="147.0" stylesheets="@itemcustomer.css" text=" 0699821139" textFill="#9b9b9b" AnchorPane.rightAnchor="368.66666666666663">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="CUBES" />
+         </graphic>
+      </Label>
+      <Label fx:id="l_qt" layoutX="57.0" layoutY="14.0" prefHeight="35.0" prefWidth="55.0" text="01" textFill="#838080">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Circle fx:id="cr_state" fill="#34a853" layoutX="17.0" layoutY="15.0" radius="12.0" stroke="WHITE" strokeType="INSIDE" />
+      <Label fx:id="lb_state" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="29.0" prefHeight="27.0" prefWidth="99.0" text="سعر البيع" textFill="#9b9b9b">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="TAG" size="12" />
+         </graphic>
+      </Label>
+   </children>
+   <effect>
+      <DropShadow color="#000000e3" height="0.0" radius="0.0" width="0.0" />
+   </effect>
+</AnchorPane>

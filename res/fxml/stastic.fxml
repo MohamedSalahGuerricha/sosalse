@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.Stastic">
+   <children>
+      <PieChart fx:id="pieHash" layoutX="56.0" layoutY="135.0" legendSide="RIGHT" prefHeight="251.0" prefWidth="232.0" AnchorPane.bottomAnchor="13.666666666666657" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="312.0" AnchorPane.topAnchor="135.00000000000003" />
+      <Circle fx:id="shpActive" fill="WHITE" layoutX="172.0" layoutY="261.0" radius="29.0" stroke="WHITE" strokeType="INSIDE" />
+      <Label fx:id="lblClose" layoutX="42.0" layoutY="31.0" text="Label" />
+      <Label fx:id="lblExpired" layoutX="130.0" layoutY="22.0" text="Label" />
+      <Label fx:id="lbl7" layoutX="213.0" layoutY="31.0" prefHeight="17.0" prefWidth="38.0" text="Label" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="362.0" AnchorPane.topAnchor="31.0" />
+      <Label fx:id="lbl90" layoutX="393.0" layoutY="31.0" text="Label" AnchorPane.leftAnchor="393.0" AnchorPane.rightAnchor="179.0" AnchorPane.topAnchor="31.0" />
+      <Label fx:id="lblExp" layoutX="469.0" layoutY="31.0" text="Label" AnchorPane.leftAnchor="469.0" AnchorPane.rightAnchor="103.0" AnchorPane.topAnchor="31.0" />
+   </children>
+</AnchorPane>

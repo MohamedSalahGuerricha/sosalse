@@ -1,0 +1,21 @@
+.gridpane{
+
+-fx-background-color :  #f2f233; /*   #00695c; */
+-fx-background-radius : 1em;
+}
+
+.gridpane:hover{
+
+-fx-background-color :  #F0F0F0; /* #004d40; */
+}
+
+
+.gridpane:pressed{
+
+-fx-background-color :  #7156DD;  /*  #1de9b6; */
+}
+.gridpane:focused{
+	-fx-background-color: #7156DD;/*#00bfa5;*/
+	-fx-border-color : #CDD1D6;
+	-fx-border-width : 0px 3px 0px 0px;
+}

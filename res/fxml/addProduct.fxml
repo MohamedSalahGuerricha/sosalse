@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefWidth="1050.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.AddProduct">
+   <children>
+      <VBox layoutX="-1.0" minWidth="1050.0" prefHeight="400.0" prefWidth="1050.0">
+         <children>
+            <HBox prefHeight="29.0" prefWidth="1000.0">
+               <opaqueInsets>
+                  <Insets left="50.0" right="50.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" right="50.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="71.0" prefWidth="1000.0">
+               <children>
+                  <JFXTextField fx:id="ed_name" alignment="BASELINE_LEFT" labelFloat="true" prefHeight="25.0" prefWidth="418.0" promptText="اسم المنتوج">
+                     <font>
+                        <Font size="14.0" />
+                     </font></JFXTextField>
+                  <Label fx:id="lb" prefHeight="17.0" prefWidth="316.0" text="Label" textFill="#da0c0c">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lb_error" prefHeight="17.0" prefWidth="195.0" textFill="#da0c0c">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+
+
+               </children>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="71.0" prefWidth="1000.0">
+               <children>
+                  <JFXTextField fx:id="ed_barcod" alignment="BASELINE_LEFT" labelFloat="true" prefHeight="30.0" prefWidth="213.0" promptText="الكود بار">
+                     <font>
+                        <Font size="14.0" />
+                     </font></JFXTextField>
+                  <FontAwesomeIconView glyphName="BARCODE" size="14">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></FontAwesomeIconView>
+                  <JFXButton prefHeight="21.0" prefWidth="63.0" style="-fx-background-color: #C2CCD3;" text="توليد" textFill="#f9f8f8">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="bt_barcode" fill="#fefcfc" glyphName="REFRESH" size="14" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXComboBox fx:id="co_class" editable="true" labelFloat="true" prefHeight="25.0" prefWidth="217.0" promptText="اختر الصنف">
+                     <HBox.margin>
+                        <Insets left="27.0" right="10.0" />
+                     </HBox.margin>
+                  </JFXComboBox>
+                  <JFXButton fx:id="bt_add_class" onAction="#addclass" prefHeight="12.0" prefWidth="79.0" style="-fx-background-color: #C2CCD3;" text="اضف صنف" textFill="#f9f8f8">
+                     <graphic>
+                        <FontAwesomeIconView fill="#fefcfc" glyphName="PLUS" size="14" />
+                     </graphic></JFXButton>
+                  <Pane fx:id="pn_new_class" prefHeight="0.0" prefWidth="367.0" visible="false">
+                     <children>
+                        <JFXTextField fx:id="ed_new_class" alignment="BASELINE_LEFT" labelFloat="true" layoutX="49.0" layoutY="9.0" prefHeight="30.0" prefWidth="141.0" promptText="اسم الصنف">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton fx:id="bt_save_new_class" layoutX="220.0" layoutY="14.0" onAction="#saveclass" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: #34A853;" text="حفظ" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView fill="#fefcfc" glyphName="SAVE" size="14" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="61.0" prefWidth="673.0">
+               <children>
+                  <JFXTextField fx:id="ed_price_sell" alignment="BASELINE_LEFT" labelFloat="true" prefHeight="30.0" prefWidth="213.0" promptText="سعر البيع">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <FontAwesomeIconView glyphName="MONEY" size="14" />
+                  <JFXTextField fx:id="ed_price_buy" alignment="BASELINE_LEFT" cache="true" labelFloat="true" prefHeight="30.0" prefWidth="217.0" promptText="سعر الشراء">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <FontAwesomeIconView glyphName="MONEY" size="14" />
+               </children>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="61.0" prefWidth="673.0">
+               <children>
+                  <JFXTextField fx:id="ed_min_stock" alignment="BASELINE_LEFT" labelFloat="true" prefHeight="30.0" prefWidth="213.0" promptText="الحد الأدنى">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <FontAwesomeIconView glyphName="ARCHIVE" size="14" />
+                  <JFXDatePicker fx:id="dp_date" prefHeight="28.0" prefWidth="239.0" promptText="تاريخ الصلاحيه">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </JFXDatePicker>
+               </children>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="117.0" prefWidth="921.0">
+               <padding>
+                  <Insets left="50.0" right="100.0" />
+               </padding>
+               <children>
+                  <JFXTextField fx:id="ed_comment" alignment="BASELINE_LEFT" labelFloat="true" prefHeight="30.0" prefWidth="853.0" promptText="ملاحظه">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="70.0" />
+                     </HBox.margin></JFXTextField>
+                  <JFXButton fx:id="bt_save" onAction="#saveproduct" prefHeight="40.0" prefWidth="104.0" style="-fx-background-color: #34A853;" text="حفظ" textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIconView fill="#fefcfc" glyphName="SAVE" size="14" />
+                     </graphic></JFXButton>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+      <HBox prefHeight="28.0" prefWidth="1050.0" />
+   </children>
+</AnchorPane>

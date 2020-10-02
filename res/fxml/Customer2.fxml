@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchor" prefWidth="1050.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.CustomerUI2">
+   <children>
+      <AnchorPane layoutY="-1.0" nodeOrientation="RIGHT_TO_LEFT" prefWidth="1050.0">
+         <children>
+            <VBox layoutY="7.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="10.0">
+                     <children>
+                        <JFXButton fx:id="bt_addclient" onAction="#refrensNodesfortardes" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #34A853;" text="اضافة زبون" textFill="#f3f1f1">
+                           <graphic>
+                              <FontAwesomeIconView fill="#fcfcfc" glyphName="PLUS" />
+                           </graphic>
+                        </JFXButton>
+                        <Pane prefHeight="103.0" prefWidth="673.0" />
+                        <JFXTextField fx:id="ed_search" alignment="BOTTOM_LEFT" focusColor="#9516f0" labelFloat="true" prefHeight="25.0" prefWidth="208.0" promptText="بحث بالاسم" />
+                        <FontAwesomeIconView glyphName="SEARCH" />
+                     </children>
+                  </HBox>
+                  <JFXListView fx:id="lv_customers2" nodeOrientation="LEFT_TO_RIGHT" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
